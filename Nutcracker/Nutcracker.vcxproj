@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Nutcracker\Log.h" />
     <ClInclude Include="src\Nutcracker.h" />
     <ClInclude Include="src\Nutcracker\Application.h" />
     <ClInclude Include="src\Nutcracker\Core.h" />
     <ClInclude Include="src\Nutcracker\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Nutcracker\Log.cpp" />
     <ClCompile Include="src\Nutcracker\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -101,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>NC_PLATFORM_WINDOWS;NC_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Nutcracker\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
