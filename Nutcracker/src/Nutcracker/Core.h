@@ -1,4 +1,6 @@
 #pragma once
+#include <string>
+#include <functional>
 
 #ifdef NC_PLATFORM_WINDOWS
 	#ifdef NC_BUILD_DLL
@@ -9,3 +11,5 @@
 #else
 	#error Nutcracker only support Windows !
 #endif
+
+#define BIT(x) (1<<x)

@@ -4,6 +4,9 @@
     <Filter Include="Nutcracker">
       <UniqueIdentifier>{17305F91-03E8-A0DE-6CEF-793A58C63BCF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Nutcracker\Event">
+      <UniqueIdentifier>{A8264425-941F-6377-BD51-48FCA9A94283}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Nutcracker.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Nutcracker\EntryPoint.h">
       <Filter>Nutcracker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nutcracker\Event\ApplicationEvent.h">
+      <Filter>Nutcracker\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nutcracker\Event\Event.h">
+      <Filter>Nutcracker\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nutcracker\Event\KeyEvent.h">
+      <Filter>Nutcracker\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nutcracker\Event\MouseEvent.h">
+      <Filter>Nutcracker\Event</Filter>
     </ClInclude>
     <ClInclude Include="src\Nutcracker\Log.h">
       <Filter>Nutcracker</Filter>

@@ -3,6 +3,7 @@
 #include "Core.h"
 #include "spdlog/spdlog.h"
 #include <memory.h>
+#include "spdlog/fmt/ostr.h"
 
 namespace Nutcracker {
 
