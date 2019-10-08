@@ -1,13 +1,14 @@
 #pragma once
 #include "Event.h"
 
+
 namespace Nutcracker {
 	
 	class NUTCRACKER_API WnidowResizeEvent : public Event {
 
 	public:
 		WnidowResizeEvent(unsigned int width, unsigned int height)
-			: m_width(width), m_Height(height){}
+			: m_Width(width), m_Height(height){}
 
 		inline unsigned int GetWidth() const { return m_Width; }
 		inline unsigned int GetHeight() const { return m_Height; }

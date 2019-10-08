@@ -7,6 +7,9 @@
     <Filter Include="Nutcracker\Event">
       <UniqueIdentifier>{A8264425-941F-6377-BD51-48FCA9A94283}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Nutcracker\Platform">
+      <UniqueIdentifier>{4B761680-B7D7-F38D-4045-3A40ACA52A4D}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Nutcracker.h" />
@@ -34,6 +37,13 @@
     <ClInclude Include="src\Nutcracker\Log.h">
       <Filter>Nutcracker</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nutcracker\Platform\WindowsWindow.h">
+      <Filter>Nutcracker\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nutcracker\Window.h">
+      <Filter>Nutcracker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ncpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nutcracker\Application.cpp">
@@ -42,5 +52,9 @@
     <ClCompile Include="src\Nutcracker\Log.cpp">
       <Filter>Nutcracker</Filter>
     </ClCompile>
+    <ClCompile Include="src\Nutcracker\Platform\WindowsWindow.cpp">
+      <Filter>Nutcracker\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ncpch.cpp" />
   </ItemGroup>
 </Project>

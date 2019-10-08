@@ -91,6 +91,6 @@ namespace Nutcracker {
 			return ss.str();
 		}
 
-		EVENT_CLASS_TYPE(MouseButtonReleased)
+		EVENT_CLASS_TYPE(MouseButtonReleaseds)
 	};
 }
