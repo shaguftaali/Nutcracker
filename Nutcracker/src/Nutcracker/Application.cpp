@@ -1,11 +1,13 @@
 #include "ncpch.h"
 #include "Application.h"
-#include "Event/ApplicationEvent.h"
+//#include "Event/ApplicationEvent.h"
+//#include "Event/MouseEvent.h"
+//#include "Event/KeyEvent.h"
 #include"Nutcracker/Log.h"
 
 namespace Nutcracker {
 
-#define BIND_EVENT_FN(x) std::bind(&x, this, std::placeholders::_1)
+#define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
 
 	Application::Application()
 	{
@@ -32,9 +34,16 @@ namespace Nutcracker {
 			m_Window->OnUpdate();
 		}
 	}
-	void Application::OnEvent(Event & e)
+	void Application::OnEvent(Event& e)
 	{
+		EventDispature dispature(e);
+		dispature.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 		NC_CORE_INFO("{0}", e);
+	}
+	bool Application::OnWindowClose(WindowCloseEvent & e)
+	{
+		m_Running = false;
+		return true;
 	}
 }
 

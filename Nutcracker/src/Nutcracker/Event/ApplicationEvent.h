@@ -2,6 +2,7 @@
 #include "Event.h"
 
 
+
 namespace Nutcracker {
 	
 	class NUTCRACKER_API WnidowResizeEvent : public Event {

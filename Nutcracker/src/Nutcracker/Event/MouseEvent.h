@@ -6,7 +6,7 @@ namespace Nutcracker {
 
 	public:
 		MouseMoveEvent(float x, float y) 
-			: m_MouseX(x), mouseY(y){}
+			: m_MouseX(x), m_MouseY(y){}
 
 		inline float GetX() const { return m_MouseX; }
 		inline float GetY() const { return m_MouseY; }
@@ -38,10 +38,10 @@ namespace Nutcracker {
 			
 			std::stringstream ss;
 			ss << "MouseScrolledEvent: " << m_XOffset << " , " << m_YOffset;
-			return ss;
+			return ss.str();
 		}
 
-		EVENT_CLASS_TYPE(MouseScrolled);
+		EVENT_CLASS_TYPE(MouseScrolled)
 		EVENT_CLASS_CATEGORY(EventCategory::EventCategoryMouse | EventCategory::EventCategoryInput)
 
 	private:
@@ -70,7 +70,7 @@ namespace Nutcracker {
 			MouseButtonEvent(button){}
 
 		std::string ToString() const override {
-			std::strindstream ss;
+			std::stringstream ss;
 			ss << "MouseButtonPressedEvent: " << m_Button;
 			return ss.str();
 		}
@@ -86,11 +86,11 @@ namespace Nutcracker {
 			MouseButtonEvent(button) {}
 
 		std::string ToString() const override {
-			std::strindstream ss;
+			std::stringstream ss;
 			ss << "MouseButtonReleasedEvent: " << m_Button;
 			return ss.str();
 		}
 
-		EVENT_CLASS_TYPE(MouseButtonReleaseds)
+		EVENT_CLASS_TYPE(MouseButtonReleased)
 	};
 }

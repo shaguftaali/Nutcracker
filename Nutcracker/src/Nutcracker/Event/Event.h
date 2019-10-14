@@ -42,7 +42,7 @@ namespace Nutcracker {
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override { return category;}
 
-	class NUTCRACKER_API Event {
+class NUTCRACKER_API Event {
 
 		friend class EventDispature;
 
@@ -75,7 +75,7 @@ namespace Nutcracker {
 		template<typename T>
 		bool Dispatch(EventFn<T> func) {
 			if (m_Event.GetEventType() == T::GetStaticType()) {
-				m_Event.m_Handle = func(*(T*)&m_Event);
+				m_Event.m_Handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;
