@@ -44,6 +44,8 @@
       <Filter>Nutcracker</Filter>
     </ClInclude>
     <ClInclude Include="src\ncpch.h" />
+    <ClInclude Include="src\Nutcracker\Layer.h" />
+    <ClInclude Include="src\Nutcracker\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nutcracker\Application.cpp">
@@ -56,5 +58,7 @@
       <Filter>Nutcracker\Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\ncpch.cpp" />
+    <ClCompile Include="src\Nutcracker\Layer.cpp" />
+    <ClCompile Include="src\Nutcracker\LayerStack.cpp" />
   </ItemGroup>
 </Project>

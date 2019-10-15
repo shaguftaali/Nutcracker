@@ -161,6 +161,8 @@
     <ClInclude Include="src\Nutcracker\Event\Event.h" />
     <ClInclude Include="src\Nutcracker\Event\KeyEvent.h" />
     <ClInclude Include="src\Nutcracker\Event\MouseEvent.h" />
+    <ClInclude Include="src\Nutcracker\Layer.h" />
+    <ClInclude Include="src\Nutcracker\LayerStack.h" />
     <ClInclude Include="src\Nutcracker\Log.h" />
     <ClInclude Include="src\Nutcracker\Platform\WindowsWindow.h" />
     <ClInclude Include="src\Nutcracker\Window.h" />
@@ -168,6 +170,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nutcracker\Application.cpp" />
+    <ClCompile Include="src\Nutcracker\Layer.cpp" />
+    <ClCompile Include="src\Nutcracker\LayerStack.cpp" />
     <ClCompile Include="src\Nutcracker\Log.cpp" />
     <ClCompile Include="src\Nutcracker\Platform\WindowsWindow.cpp" />
     <ClCompile Include="src\ncpch.cpp">
